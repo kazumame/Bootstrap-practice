@@ -1,0 +1,60 @@
+【Bootstrapメモ】
+CSSフレームワーク
+
+<div class="text-center bg-primary">BOX</div>
+で中央揃え 背景青に
+
+<h2 class="font-weight-normal display-4">wooooooooooo</h2>
+<div class="text-center bg-primary">BOX</div>
+<div class="text-right bg-success text-warning">BOX</div>
+<div class="text-center bg-info font-weight-bold">BOX</div>
+<div class="text-center bg-dark text-light">BOX</div>
+
+width heightのサイズ指定が楽になる
+<div class="box-container">
+  <div class="bg-primary w-25 h-50 pt-3">BOX</div>
+</div>
+
+bootstrapで使ったクラスが優先されてしまう
+自作クラスをつかうさいは注意が必要！
+
+ボタンの例
+<button class="btn btn-primary">OK</button>
+<button class="btn btn-info btn-sm">OK</button>
+<button class="btn btn-danger btn-lg">OK</button>
+
+グリッドレイアウト
+<div class="container">
+  <div class="row">
+    <div class="col bg-primary">1</div>
+    <div class="col bg-secondary">2</div>
+    <div class="col bg-info">3</div>
+  </div>
+  <div class="row mb-3">
+    <div class="col bg-danger">1</div>
+    <div class="col bg-warning">2</div>
+    <div class="col bg-dark">3</div>
+  </div>
+  <div class="row">
+    <div class="col-8 bg-primary">1</div>
+    <div class="col-4 bg-secondary">2</div>
+  </div>
+  <div class="row mb-3">
+    <div class="col-4 bg-danger">1</div>
+    <div class="col-6 bg-warning">2</div>
+    <div class="col-2 bg-dark">3</div>
+  </div>
+
+レスポンシブデザイン
+  <div class="row">
+    <div class="col-10 bg-primary">1</div>
+    <div class="col-2 bg-secondary">2</div>
+  </div>
+  <div class="row">
+    <div class="col-10 col-md-2 bg-primary">1</div>
+    <div class="col-2 d-md-none bg-secondary">2</div>
+  </div>
+  <div class="row">
+    <div class="col-10 bg-primary">1</div>
+    <div class="d-none d-md-block col-md-2 bg-secondary">2</div>
+  </div>
